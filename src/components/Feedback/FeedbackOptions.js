@@ -1,7 +1,9 @@
+import './Feedback.css';
 const FeedBackOptions = ({ options, onLeaveFeedback }) => (
   <div>
     {options.map(option => (
       <button
+        className="item__button"
         key={option}
         type="button"
         onClick={() => onLeaveFeedback(option)}
